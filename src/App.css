@@ -19,3 +19,24 @@
 .main{
   display: flex;
 }
+.playlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.playlistitems{
+  display: flex;
+  flex-wrap: wrap;
+}
+.importedTrack{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  padding: 2px;
+  width: 50%;
+}
+
+.importedTrack p{
+  margin: 0px;
+  font-size: 10px;
+}

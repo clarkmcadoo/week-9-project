@@ -6,17 +6,19 @@ render(){
     let songs = this.props.songs;
     let tracks = songs.map((track, index)=>{
         return(
-            <ul key = {index}>
-                <li>{track.userName}</li>
-                <li>{track.songArtist}</li>
-                <li>{track.songTitle}</li>
-                <li>{track.songNotes}</li>
-            </ul>
+
+            <div key = {index} className="importedTrack">
+                <p>User: {track.userName}</p>
+                <p>Artist: {track.songArtist}</p>
+                <p>Title: {track.songTitle}</p>
+                <p>Notes: {track.songNotes}</p>
+            </div>
+
 
         )
     })
     return(
-        <div>
+        <div className="playlistitems">
             {tracks}
         </div>
 
